@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-class DemoWidget extends StatelessWidget {
+class TapWaterContentWidget extends StatelessWidget {
   final String text;
-
-  DemoWidget(this.text);
+  TapWaterContentWidget(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -18,17 +17,13 @@ class DemoWidget extends StatelessWidget {
 
 class DemoStateWidget extends StatefulWidget {
   final String text;
-  ////通过构造方法传值··
+  ////通过构造方法传值
   DemoStateWidget(this.text);
-
-
-
   ///主要是负责创建state
   @override 
   _DemoStateWidgetState createState() => _DemoStateWidgetState(text);
 
 }
-
 
 class _DemoStateWidgetState extends State<DemoStateWidget> {
   String text;
@@ -45,7 +40,6 @@ class _DemoStateWidgetState extends State<DemoStateWidget> {
         text = "值变了";
       });
     });
-
   }
 
   @override

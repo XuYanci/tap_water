@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'TapWaterTabbar.dart';
+import 'TapWaterMainWidget.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TapWaterTabbar(isButton: true, btmNavbar: [
+      home: TapWaterMainWidget(isButton: true, btmNavbar: [
               {'title': '微信', 'icon': Icon(Icons.ac_unit)},
               {'title': '微信', 'icon': Icon(Icons.ac_unit)},
               {'title': '微信', 'icon': Icon(Icons.ac_unit)},

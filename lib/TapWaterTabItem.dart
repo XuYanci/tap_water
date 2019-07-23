@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TabItem extends StatefulWidget {
+class TapWaterTabItem extends StatefulWidget {
   final String title;
   final Icon icon;
   final double width;
-  TabItem({this.title, this.icon, this.width});
+  TapWaterTabItem({this.title, this.icon, this.width});
   @override
   State<StatefulWidget> createState() => _TabItem();
 }
 
-class _TabItem extends State<TabItem> {
+class _TabItem extends State<TapWaterTabItem> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
