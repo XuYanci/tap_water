@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: TapWaterMainWidget(isButton: true, btmNavbar: [
-              {'title': '微信', 'icon': Icon(Icons.ac_unit)},
-              {'title': '微信', 'icon': Icon(Icons.ac_unit)},
-              {'title': '微信', 'icon': Icon(Icons.ac_unit)},
-              {'title': '微信', 'icon': Icon(Icons.ac_unit)}
-            ]),
+        {'title': '微信', 'icon': Icon(Icons.ac_unit)},
+        {'title': '微信', 'icon': Icon(Icons.ac_unit)},
+        {'title': '微信', 'icon': Icon(Icons.ac_unit)},
+        {'title': '微信', 'icon': Icon(Icons.ac_unit)}
+      ]),
     );
   }
 }

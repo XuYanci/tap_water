@@ -26,7 +26,10 @@ class _TabItem extends State<TapWaterTabItem> {
                     ? Container(
                         child: Padding(
                           padding: const EdgeInsets.only(top: 5),
-                          child: IconButton(icon: widget.icon, color: Color(0xFF8c77ec), onPressed: null),
+                          child: IconButton(
+                              icon: widget.icon,
+                              color: Color(0xFF8c77ec),
+                              onPressed: null),
                         ),
                       )
                     : Container(
@@ -42,7 +45,8 @@ class _TabItem extends State<TapWaterTabItem> {
                       child: widget.title != null
                           ? Text(
                               widget.title,
-                              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 10),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 10),
                             )
                           : Container(),
                     ),

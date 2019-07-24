@@ -32,9 +32,10 @@ class _TapWaterTabBarState extends State<TapWaterTabBar> {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: widget.btmNavbar
-                .map((v) =>  v != null ? TapWaterTabItem(title: v['title'], icon: v['icon']) : (widget.isButton ? TapWaterTabItem() : Text('')))
-                .toList()  
-            ,
+                .map((v) => v != null
+                    ? TapWaterTabItem(title: v['title'], icon: v['icon'])
+                    : (widget.isButton ? TapWaterTabItem() : Text('')))
+                .toList(),
           ),
         ),
         Positioned(
@@ -46,17 +47,6 @@ class _TapWaterTabBarState extends State<TapWaterTabBar> {
                 )
               : Text(''),
         )
-//        IgnorePointer(
-//          child: Container(
-//            decoration: const BoxDecoration(color: Colors.transparent),
-//            child: Align(
-//              heightFactor: 1,
-//              child: OverflowBox(
-//                child: ,
-//              ),
-//            ),
-//          ),
-//        )
       ],
     );
   }
