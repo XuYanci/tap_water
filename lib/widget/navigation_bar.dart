@@ -22,7 +22,7 @@ class NavigationBar extends StatelessWidget implements PreferredSizeWidget {
                 child: _buildPopupMenuItem(
                     Icon(
                       Icons.search,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     "发起群聊"),
                 value: "group_chat",
@@ -31,7 +31,7 @@ class NavigationBar extends StatelessWidget implements PreferredSizeWidget {
                 child: _buildPopupMenuItem(
                     Icon(
                       Icons.add_circle,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     "添加朋友"),
                 value: "add_friend",
@@ -40,7 +40,7 @@ class NavigationBar extends StatelessWidget implements PreferredSizeWidget {
                 child: _buildPopupMenuItem(
                     Icon(
                       Icons.scanner,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     "扫一扫"),
                 value: "scan",
@@ -49,7 +49,7 @@ class NavigationBar extends StatelessWidget implements PreferredSizeWidget {
                 child: _buildPopupMenuItem(
                     Icon(
                       Icons.payment,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     "收付款"),
                 value: "pay",
@@ -75,7 +75,7 @@ class NavigationBar extends StatelessWidget implements PreferredSizeWidget {
         Text(
           title,
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
           ),
         )
       ],

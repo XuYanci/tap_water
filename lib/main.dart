@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'widget/navigation_bar.dart';
-// import 'TapWaterTabbar.dart';
 import 'tap_water_tab_bar.dart';
 
 void main() => runApp(MyApp());

@@ -56,6 +56,7 @@ class WaterTabBar extends StatefulWidget {
       : super(key: key) {
     // 解决tab为基数问题
     if (this.isButton) {
+      
       this.len = this.btmNavbar.length;
       if (this.len % 2 == 0) {
         // btmNavbar偶数
