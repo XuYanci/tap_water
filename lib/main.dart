@@ -26,7 +26,11 @@ class _MyAppPage extends StatefulWidget {
 }
 
 class _MyAppPageState extends State<_MyAppPage> {
-  int _index = 0;
+
+  /// 当前选中页面
+  int _currentPageIndex = 0;
+
+  /// 页面集合
   var _pages = [
     Align(
       alignment: Alignment.center,
@@ -56,43 +60,55 @@ class _MyAppPageState extends State<_MyAppPage> {
   @override
   Widget build(BuildContext context) {
     return WaterTabBar(
-        isButton: true,
-        selectedColor: Colors.green,
+        hasPlusButton: true,
+        selectedColor: Colors.black,
         appBar: NavigationBar(),
-        body: _pages[_index],
+        body: _pages[_currentPageIndex],
         btmNavbar: <NavigationIconView>[
           NavigationIconView(
-            title: '微信1',
-            icon: Icon(Icons.ac_unit),
-            activeIcon: Icon(Icons.backspace),
+            title: '首页',
+            icon: ImageIcon(
+                AssetImage('resources/images/home/home_normal@2x.png'),
+                color: Colors.black),
+            activeIcon: ImageIcon(
+                AssetImage('resources/images/home/home_highlight@2x.png'),
+                color: Colors.black),
           ),
           NavigationIconView(
-            title: '微信2',
-            icon: Icon(Icons.ac_unit),
-            activeIcon: Icon(Icons.cached),
+            title: '鱼塘',
+            icon: ImageIcon(
+                AssetImage('resources/images/fishpond/fishpond_normal@2x.png'),
+                color: Colors.black),
+            activeIcon: ImageIcon(
+                AssetImage(
+                    'resources/images/fishpond/fishpond_highlight@2x.png'),
+                color: Colors.black),
           ),
           NavigationIconView(
-            title: '微信3',
-            icon: Icon(Icons.ac_unit),
-            activeIcon: Icon(Icons.edit),
+            title: '消息',
+            icon: ImageIcon(
+                AssetImage('resources/images/message/message_normal@2x.png'),
+                color: Colors.black),
+            activeIcon: ImageIcon(
+                AssetImage('resources/images/message/message_highlight@2x.png'),
+                color: Colors.black),
           ),
           NavigationIconView(
-            title: '微信4',
-            icon: Icon(Icons.ac_unit),
-            activeIcon: Icon(Icons.cached),
+            title: '我的',
+            icon: ImageIcon(
+                AssetImage('resources/images/account/account_normal@2x.png'),
+                color: Colors.black),
+            activeIcon: ImageIcon(
+                AssetImage('resources/images/account/account_highlight@2x.png'),
+                color: Colors.black),
           ),
-          // NavigationIconView(
-          //   title: '微信6',
-          //   icon: Icon(Icons.ac_unit),
-          //   activeIcon: Icon(Icons.cached),
-          // ),
         ],
         onTabClick: onTabClick);
   }
 
   void onTabClick(int index) {
     setState(() {
-      _index = index;
+      _currentPageIndex = index;
     });
     print('$index');
   }
