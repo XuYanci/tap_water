@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// TODO:添加支持Lottie样式
 class NavigationIconView {
   final BottomNavigationBarItem item;
   NavigationIconView({
@@ -105,7 +106,8 @@ class _WaterTabBarState extends State<WaterTabBar> {
       body: widget.body,
       bottomNavigationBar: _bottomNavigationBar,
       floatingActionButton: Container(
-        padding: EdgeInsets.only(bottom: 40.0),
+         // TODO: 适配iPhoneX
+        padding: EdgeInsets.only(bottom: 20.0),
         child: Align(
           alignment: Alignment.bottomCenter,
           child: widget.hasPlusButton
