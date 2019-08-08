@@ -94,8 +94,8 @@ class _WaterTabBarState extends State<WaterTabBar> {
           .toList(),
       currentIndex: _activeTabIndex,
       fixedColor: widget.selectedColor,
-      selectedLabelStyle: TextStyle(fontSize: 12),
-      unselectedLabelStyle: TextStyle(fontSize: 12),
+      selectedLabelStyle: TextStyle(fontSize: 10),
+      unselectedLabelStyle: TextStyle(fontSize: 10),
       type: BottomNavigationBarType.fixed,
       onTap: _onTabClick,
     );
@@ -117,7 +117,9 @@ class _WaterTabBarState extends State<WaterTabBar> {
                     color: Colors.black,
                     size: 36,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    _onTabClick(widget.plusButtonindex);
+                  },
                   shape: CircleBorder(
                       side: BorderSide(color: Colors.white, width: 3.5)),
                   backgroundColor: _plusButtonBackgroundColor)
